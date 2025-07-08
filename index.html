@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素定格青春</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="left-text">
+            <h2>像素定格青春天大</h2>
+            <p>Powered by OpenAI Image models</p>
+        </div>
+        <div class="right-panel">
+            <div class="drop-box" id="dropBox">
+                <p>点击或拖拽图片到此</p>
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+            <button id="createBtn">创建</button>
+            <div class="result-box" id="resultBox">
+                <p>生成的像素画将显示在这里</p>
+            </div>
+            <button id="downloadBtn" disabled>下载像素画</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
