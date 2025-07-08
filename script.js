@@ -81,12 +81,12 @@ createBtn.addEventListener('click', async () => {
         resultBox.innerHTML = '<p style="color:white;">生成中，请等待...</p>';
 
         // 调用后端代理接口（而非直接调 SD3）
-        const response = await fetch('http://localhost:3000/generate-sd3', {
+        const response = await fetch('https://pixel-art-backend-lwcd.onrender.com/generate-pixel-art', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                prompt: '转换为 8-bit 像素画风格，复古游戏画面质感，色彩鲜明', // 详细描述像素风格
-                init_image: originalImageBase64, // 纯 Base64 数据
+                prompt: '转换为 8-bit 像素画风格，复古游戏画面质感，色彩鲜明',
+                init_image: originalImageBase64,
                 output_format: 'jpeg'
             })
         });
